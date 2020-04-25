@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@700&family=Manrope:wght@800&family=Montserrat&display=swap');
+
+html {
+    box-sizing: border-box;
+    /* background: #EEE; */
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+h1 {
+  font-family:'Kalam', cursive;
+  font-size: 60px;
+  text-align: center;
+}
+
+h2 {
+  font-family:'Montserrat', sans-serif;
+  font-size: 30px;
+  text-align: center;
+}
+
+h3 {
+  font-family:'Manrope', sans-serif;
+  font-size: 30px;
+}
+
+h4 {
+  font-family:'Montserrat', sans-serif;
+  font-size: 20px;
+}
+
+p {
+  font-family:'Montserrat', sans-serif;
+  font-size: 15px;
+}
+
+body {
+  font-family:'Montserrat', sans-serif;
+  font-size: 15px;
+}
+
+header {
+  background-color: #758ECD;
+  padding: 5px;
+  margin: 10px;
+  color: #FFFFFF;
+  text-align: center;
+  line-height: normal;
+}
+
+footer {
+  padding: 5px;
+  background-color: #758ECD;
+  text-align: center;
+}
+
+.photo{
+  background-color: #A6B1E1;
+  padding: 5px;
+  margin: 10px;
+}
+
+.bio {
+  background-color: #DCD6F7;
+  padding: 5px;
+  margin: 10px;
+  color: #FFFFFF;
+}
+
+.article {
+  background-color: #C6E2E9;
+  padding: 5px;
+  margin: 10px;
+}
+
+.education{
+  padding: 5px;
+  background-color: #A6B1E1;
+  margin: 10px;
+}
+
+.work{
+  padding: 5px;
+  background-color: #DCD6F7;
+  margin: 10px;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+a {
+  color: #FFFFFF;
+}
+
+.container {
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr;
+   grid-template-rows: 1fr;
+   grid-template-areas:
+      "d e f";
+   min-height: 100vh;
+   grid-row-gap: 20px;
+   grid-column-gap: 20px;
+   color: white;
+}
+
+.top{
+   display: grid;
+   grid-template-columns: 1fr 2fr;
+   grid-template-rows: 1fr;
+   grid-template-areas:
+      "d . f";
+   min-height: 30vh;
+   grid-row-gap: 20px;
+   grid-column-gap: 20px;
+   color: white;
+}
+
+.bottom{
+   display: grid;
+   grid-template-columns: 1fr;
+   grid-template-rows: 1fr 1fr;
+   grid-template-areas:
+      "x y";
+   min-height: 50vh;
+   grid-row-gap: 20px;
+   grid-column-gap: 20px;
+   color: white;
+}
