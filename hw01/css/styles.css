@@ -111,10 +111,10 @@ a {
 
 .top{
    display: grid;
-   grid-template-columns: 1fr 2fr;
+   grid-template-columns: 1fr 1fr;
    grid-template-rows: 1fr;
    grid-template-areas:
-      "d . f";
+      "d f";
    min-height: 30vh;
    grid-row-gap: 20px;
    grid-column-gap: 20px;
