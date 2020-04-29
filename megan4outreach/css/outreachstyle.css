@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@700&family=Manrope:wght@800&family=Montserrat&display=swap');
+
+html {
+    box-sizing: border-box;
+    /* background: #EEE; */
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+h1 {
+  font-family:'Kalam', cursive;
+  font-size: 60px;
+  text-align: center;
+  color: #FFFFFF;
+  padding: 0px;
+}
+
+h2 {
+  font-family:'Manrope', sans-serif;
+  font-size: 30px;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+h3 {
+  font-family:'Manrope', sans-serif;
+  font-size: 20px;
+  color: #FFFFFF;
+}
+
+.biglist{
+  font-family:'Montserrat', sans-serif;
+  font-size: 18px;
+  color: #FFFFFF;
+}
+
+h6 {
+  font-family:'Montserrat', sans-serif;
+  font-size: 15px;
+  color: #FFFFFF;
+  text-align: center;
+}
+
+p {
+  font-family:'Montserrat', sans-serif;
+  font-size: 15px;
+  color: #FFFFFF;
+}
+
+body {
+  font-family:'Montserrat', sans-serif;
+  font-size: 15px;
+}
+
+header {
+  background-color: #758ECD;
+  padding: 10px;
+  margin: 10px;
+  color: #FFFFFF;
+  text-align: center;
+  line-height: normal;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+footer {
+  padding: 10px;
+  background-color: #758ECD;
+  text-align: center;
+}
+
+.photo{
+  background-color: #A6B1E1;
+  padding: 10px;
+  margin: 10px;
+}
+
+.intro {
+  background-color: #A6B1E1;DCD6F7
+  padding: 10px;
+  margin: 10px;
+  color: #FFFFFF;
+  text-align: center;
+  display: block;
+}
+
+.quals {
+  background-color: #8CB4C9;
+  padding: 10px;
+  margin: 10px;
+}
+
+.video{
+  max-width: 100%;
+  display: block;
+  margin: 0 auto;
+}
+
+.questions {
+  background-color: #AEC9B3;
+  padding: 10px;
+  margin: 10px;
+}
+
+.general{
+  padding: 10px;
+  background-color: #B2CCD3;
+  margin: 2px;
+  min-width: 450px;
+  min-height: 500px;
+}
+
+.description{
+  padding: 10px;
+  background-color: #C6C1E1;
+  margin: 10px;
+}
+
+.split{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas:
+     "d f";
+  min-height: 30vh;
+  grid-row-gap: 20px;
+  grid-column-gap: 20px;
+  color: white;
+}
+
+a {
+  color: #FFFFFF;
+}
+
+ul {
+  color: #FFFFFF
+}
+
+ol {
+  color: #FFFFFF
+}
+
+@media (max-width: 600px) {
+   .split {
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 1fr;
+      grid-template-areas:
+         "a"
+         "b";
+   }
+}
