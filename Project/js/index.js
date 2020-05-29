@@ -1,53 +1,22 @@
-paper.install(window);
-paper.setup('myCanvas');
 
-const screenW = view.size.width;
-const screenH = view.size.height;
 
-//const lavenderTheme = () => {
-//   document.querySelector('.background').className='background'
-};
-
-const violetTheme = () => {
-   document.querySelector('.background').className='violetBackground'
-};
-
-let character = document.getElementById("character");
-
-var moveCharacterRight = function (character) {
-    document.querySelector(".character").innerHTML = "<img src="right.png">";
-    character.item.position.x += 50px;
-}
-
-var moveFish = function (fish) {
-    fish.item.position.x += fish.speed;
-    if (fish.item.position.x < -100 ) {
-        fish.item.position.x = screenW + 100;
-    }
-    if (fish.item.position.x > screenW + 100) {
-        fish.item.position.x = -100;
+const checkKey = (e) => {
+    var character = document.querySelector(".character");
+    var leftValue = parseInt(document.querySelector(".character").style.left, 10);
+    console.log(leftValue)
+    var topValue = parseInt(document.querySelector(".character").style.top, 10);
+    console.log(leftValue)
+    var k = e.keyCode;
+    if (k == '39'){
+        console.log("Right key was pressed");
+        document.querySelector(".game").innerHTML = '<img src="right.png" class="character animate">';
+        document.querySelector(".character").style.left = `${leftValue + 10}`;
+      }
+    else if (k =='37') {
+        console.log("Left key was pressed");
+        document.querySelector(".game").innerHTML = '<img src="left.png" class="character animate">';
+        document.querySelector(".character").style.left = `${topValue + 10}`;
     }
 };
 
-//call the addFish function and pass
-//in the number of fish you would like to generate
-//as an argument
-const fishList = generateFishes(10);
-
-view.onFrame = (event) => {
-    // make a for loop that moves all 20 of the fish
-    // in the fishList array
-    moveFish(fishList[0]);
-    moveFish(fishList[1]);
-    moveFis
-
-///const moveRight = (event) => {
-///  if (event.keyCode === 39) {
-///    console.log('Right key was pressed');
-///    moveCharacterRight();
-///}
-
-
-
-
-document.querySelector('.rightButton').onclick = moveRight;
+document.addEventListener('keydown', checkKey)
