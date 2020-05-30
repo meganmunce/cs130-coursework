@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Teko:wght@500&display=swap');
+
+body {
+    margin: 0;
+}
+
+h1 {
+  font-size: 50px;
+  font-family: 'Teko', sans-serif;
+  color: #432556;
+  padding: 0px;
+  margin: 0px;
+}
+
+h2 {
+  font-size: 30px;
+  font-family: 'Teko', sans-serif;
+  text-align: center;
+  color: #63458A;
+  padding: 0px;
+  margin: 0px;
+}
+
+h3 {
+  font-size: 18px;
+  font-family: 'Montserrat', sans-serif;
+  color: black;
+  padding: 5px;
+  margin: 0px;
+}
+
+p {
+  text-indent: 5px;
+  font-size: 15px;
+  font-family: 'Montserrat', sans-serif;
+  padding: 0px;
+  margin: 0px;
+}
+
+a {
+  text-indent: 5px;
+  font-size: 15px;
+  font-family: 'Montserrat', sans-serif;
+  padding: 0px;
+  margin: 0px;
+  text-decoration: none;
+  color: black;
+}
+
+li {
+  font-size: 15px;
+  font-family: 'Montserrat', sans-serif;
+  text-indent: 5px;
+  padding: 0px;
+  margin: 0px;
+}
+
+.clips h2 {
+  text-align: center;
+}
+
+#container {
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr 1fr;
+   grid-template-rows: 0.2fr 0.1fr 1fr 1fr;
+   grid-template-areas:
+      "a a a a"
+      "b b b b"
+      "e f g h"
+      "c c d d";
+   min-height: 100vh;
+   grid-row-gap: 10px;
+   grid-column-gap: 10px;
+   color: black;
+   background-color: #D1BCE3;
+   padding: 20px;
+}
+
+.intro {
+  background-color: white;
+  grid-area: a;
+  text-align: center;
+  margin: 20px;
+  padding: 10px;
+}
+
+.intro h1 {
+  color: #432556;
+}
+
+.work {
+  grid-area: d;
+  background-color: white;
+  padding: 10px;
+}
+
+.education {
+  grid-area: c;
+  background-color: white;
+  padding: 10px;
+}
+
+.clips {
+  grid-area: b;
+  background-color: white;
+  padding: 10px;
+  text-align: center;
+}
+
+.button {
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  border: none;
+  background-color: #63458A;
+  color: white;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 5px;
+  border-radius: 8px;
+}
+
+.article1 {
+  grid-area: e;
+}
+
+.article2 {
+  grid-area: f;
+  height: 500px;
+}
+
+.article3 {
+  grid-area: g;
+}
+
+.article4 {
+  grid-area: h;
+}
+
+.articlehover {
+  background-color: white;
+  padding: 10px;
+  width: 1fr;
+  height: 500px;
+  animation: fadeIn ease 3s;
+
+}
+
+.articlehover:hover{
+  box-shadow: 3px 3px 3px #432556;
+}
+
+.image {
+  width: 100%;
+  height: auto;
+  text-align: center;
+}
+
+.icon {
+  color: #432556;
+  padding: 5px;
+}
+
+.icon:hover{
+  text-shadow: 3px 3px 3px #D1BCE3;
+}
+
+.character {
+  top: 0;
+  left: 50;
+  height: 100px;
+  width: 100px;
+  position: absolute;
+  top: 100px;
+}
+
+.animate {
+  animation: jump 500ms;
+}
+
+@keyframes jump {
+  0%{top: 100px;}
+  30%{top: 50px;}
+  70%{top: 50px;}
+  100%{top: 100px;}
+}
+
+@keyframes fadeIn {
+  0%{opacity:0%}
+  100%{opacity:100%}
+}
+
+/*iPad*/
+
+@media (max-width: 1024px) {
+    .container {
+       grid-template-columns: 1fr 1fr;
+       grid-template-rows: 0.5fr 0.5fr 1.5fr 1.5fr 1.5fr;
+       grid-template-areas:
+          "a a"
+          "b b"
+          "e f"
+          "g h"
+          "c d";
