@@ -342,9 +342,9 @@ const clearTheScreen = () => {
 // VARIABLES
 
 const character = document.querySelector('.character');
-var printBox = document.querySelector('.printbox');
-var resumeBox = document.querySelector('.resumebox');
-var multimediaBox = document.querySelector('.multimediabox');
+var printbox = document.querySelector('.printbox');
+var resumebox = document.querySelector('.resumebox');
+var multimediabox = document.querySelector('.multimediabox');
 const distance = 25; // change to whatever you want:
 
 // MOVING THE CHARACTER -- thank you Sarah!
@@ -384,10 +384,7 @@ function removeJump ()  {
   console.log("removed jump");
 };
 
-const addJump = () => {
-  character.classList.add("jumping");
-  setTimeout(removeJump, 1000);
-};
+
 
 const checkKey = (e) => {
     var k = e.keyCode;
@@ -405,30 +402,9 @@ const checkKey = (e) => {
       console.log("Up key was pressed");
       character.classList.add("jumping");
       console.log("Added jump");
-      window.setTimeout(removeJump, 3000);
+      window.setTimeout(removeJump, 450);
       checkLeft();
     };
-};
-
-//COLLISION CHECKS
-
-var resumeLeft = resumeBox.style.left;
-console.log(resumeLeft);
-var printLeft = printBox.style.left;
-console.log(printLeft);
-var multimediaLeft = multimediaBox.style.left;
-console.log(multimediaLeft);
-
-const checkLeft = (e) => {
-  if (character.style.left >= resumeLeft && character.style.left <= printLeft) {
-    checkResume();
-  }
-  else if (character.style.left >= printLeft && character.style.left <= multimediaLeft) {
-    checkTop();
-  }
-  //else if (character.style.left <= "275px" && character.style.left >= "375") {
-  //  checkMultimedia();
-//  }
 };
 
 // EVENT LISTENERS

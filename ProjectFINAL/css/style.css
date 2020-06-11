@@ -14,7 +14,7 @@ body {
    grid-template-rows: 0.2fr 0.3fr;
    grid-template-areas:
     "a a b"
-    "c c c ";
+    "c c c"
 }
 
 .viewer {
@@ -107,8 +107,18 @@ body {
   margin: 20px;
 }
 
+
 .nav h2 {
   font-size: 25px;
+}
+
+.game {
+  background-image: url("white75percent.png");
+  background-size: cover;
+  background-repeat: repeat;
+  padding: 20px;
+  text-align: center;
+  margin: 20px;
 }
 
 .d {
@@ -252,21 +262,20 @@ li {
 }
 
 .character {
-  left: 150px;
   height: 100px;
   width: 100px;
-  position: relative;
-  /*top: 500px;*/
+  position: sticky;
+  top: 600px;
 }
 
 .jumping {
-  animation: jump 500ms;
+  animation: jump 400ms;
 }
 
 @keyframes jump {
   0%{top: 500px;}
-  30%{top: 475px;}
-  70%{top: 475px;}
+  30%{top: 400px;}
+  70%{top: 400px;}
   100%{top: 500px;}
 }
 
