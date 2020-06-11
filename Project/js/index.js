@@ -1,3 +1,5 @@
+
+
 multimediaArticleOne = `
 <section class="article1 articlehover">
   <iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/824934847&color=ff5500"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis;
@@ -11,12 +13,14 @@ multimediaArticleOne = `
 `
 
 multimediaArticleTwo = `
+<section class="article2 articlehover">
 <p class="codepen" data-height="471" data-theme-id="light" data-default-tab="result" data-user="meganmunce" data-slug-hash="PLRqgN" style="height: 471px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="Jour 201-2 Final Project">
   <span>See the Pen <a href="https://codepen.io/meganmunce/pen/PLRqgN">
   Jour 201-2 Final Project</a> by Megan Munce (<a href="https://codepen.io/meganmunce">@meganmunce</a>)
   on <a href="https://codepen.io">CodePen</a>.</span>
 </p>
-<script async src="https://static.codepen.io/assets/embed/ei.js"></script>`
+<script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+</section>`
 
 printArticleOne = `
 <a href="https://dailynorthwestern.com/2020/05/25/campus/desi-american-women-fight-period-stigma-during-asian-pacific-american-heritage-month/" target="_blank">
@@ -41,13 +45,137 @@ printArticleTwo = `
 </section>
 </a>
 `
-multimediaGrid = `
-grid-template-areas:
-   "a a a a"
-   "b b b b"
-   "e e f f"
-   "c c d d";
+
+printArticleThree = `
+<a href="https://dailynorthwestern.com/2019/04/16/campus/northwestern-joins-action-collaborative-to-address-sexual-and-gender-harassment-in-higher-education/" target="_blank">
+<section class="article3 articlehover">
+  <img src="https://dailynorthwestern.com/wp-content/uploads/2019/04/HARASSMENT_DanielTian_file_WEB-900x598.jpg" class="image">
+  <h3>Northwestern joins action collaborative to address sexual and gender harassment in higher education</h3>
+  <p>Northwestern recently announced its commitment to address that problem, as well as other forms of gender-based discrimination, by joining the Action Collaborative on Preventing Sexual Harassment in Higher Education as a founding member.</p>
+  <br>
+  <p>Click to read more.</p>
+</section>
+</a>
 `
+
+printArticleFour = `
+<a href="https://dailynorthwestern.com/2018/10/12/campus/dolores-huerta-speaks-at-northwestern-for-womens-center-keynote-address/" target="_blank">
+<section class="article4 articlehover">
+  <img src="https://dailynorthwestern.com/wp-content/uploads/2018/10/HUERTA1-ColinBoyle-WEB-900x600.jpg" class="image">
+  <h3>Dolores Huerta hits history, politics, education</h3>
+  <p>The Northwestern University Women’s Center kicked off its year-long theme of “Gender, Work, & Power” with a keynote address by civil rights activist Dolores Huerta on Thursday.</p>
+  <br>
+  <p>Click to read more.</p>
+</section>
+</a>
+`
+
+resumeContent = `
+
+<section class="d shown">
+<h2>Work Experience</h2>
+<h3>The Daily Northwestern</h3>
+<p>Assistant Campus Editor</p>
+<p>September 2018 - current</p>
+<p>Evanston, IL/Remote</p>
+  <ul>
+    <li>Assist the campus editor in editing all campus desk articles for style and clarity</li>
+    <li>Pitch and budget weekly stories</li>
+    <li>Cover student activists at Northwestern</li>
+  </ul>
+  <h3>Parity.org</h3>
+  <p>Content Volunteer</p>
+  <p>August 2019 - January 2020</p>
+  <p>Remote</p>
+    <ul>
+      <li>Research current events and news about women in business leadership</li>
+      <li>Create unique content for Twitter, Facebook, and LinkedIn to promote content and the nonprofit's message</li>
+      <li>Analyze past analytics to grow engagement across platforms</p>
+    </ul>
+    <h3>The Organization for World Peace</h3>
+    <p>Junior Correspondent</p>
+    <p>April 2019 - August 2020</p>
+    <p>Remote</p>
+      <ul>
+        <li>Research current events and news about developments in international conflict</li>
+        <li>Write weekly articles briefing about the development, its past context, and </li>
+      </ul>
+</section>
+<section class="e shown">
+<h2>Education</h2>
+<h3> Presentation High School </h3>
+<p>San Jose, CA</p>
+<p><b>Degree: </b>High School Diploma</p>
+  <p><b>GPA: </b>4.43</b></p>
+  <p><b>Activities: </b></p>
+  <ul>
+    <li>Vice President of Speech & Debate</li>
+    <li>Student Council Class Officer</li>
+    <li> Students for Political Action Officer</li>
+    <li>Jazz Band co-founder</li>
+    <li>Big Sister</li>
+    <li>Junior Varsity Track & Field</li>
+  </ul>
+  <h3> Northwestern University </h3>
+  <p>Evanston, IL</p>
+  <p><b>Degree: </b>Bachelor's of science in journalism, second major in political science (expected June 2022)</p>
+    <p><b>GPA: </b>3.85</b></p>
+    <p><b>Activities: </b></p>
+    <ul>
+      <li>The Daily Northwestern</li>
+      <li>Northwestern Mock Trial</li>
+      <li>Medill News Service</li>
+      <li>Peer Adviser</li>
+      <li>Womxn in Law</li>
+      <li>Delta Gamma women's fraternity</li>
+    </ul>
+</section>
+<section class="f shown">
+<h2>Skills</h2>
+<p>Languages</p>
+<ul>
+<li>Native fluency in English</li>
+<li>Professional fluency in Spanish (speaking, reading, writing)</li>
+</ul>
+<p>Computer Science</p>
+<ul>
+<li>Novice HTML, CSS, Javascript</li>
+<li>Novice Python</li>
+</ul>
+<p>Creativity & Productivity Tools</p>
+<ul>
+<li>Advanced in Google Suite</li>
+<li>Advanced in Microsoft Suite</li>
+</ul>
+<p>Journalism</p>
+<ul>
+<li>Advanced in AP style</li>
+<li>Proficient in Adobe Audition</li>
+</ul>
+<p>Design & Visualization</p>
+<ul>
+<li>Proficient in Adobe Illustrator</li>
+<li>Proficient in Adobe InDesign</li>
+<li>Proficient in Adobe Photoshop</li>
+<li>Proficient in Adobe After Effects</li>
+<li>Proficient in Procreate</li>
+<li>Proficient in Tableau</li>
+</ul>
+</section>
+<section class="g shown">
+<p>empty for now!</p>
+</section>
+`
+
+resumeHidden = `
+<section class="d hidden">
+</section>
+<section class="e hidden">
+</section>
+<section class="f hidden">
+</section>
+<section class="g hidden">
+</section>`
 
 const checkKey = (e) => {
     var character = document.querySelector(".character");
@@ -70,21 +198,68 @@ const checkKey = (e) => {
 
 
 const multimediaArticles = () => {
-  document.querySelector('.article1').innerHTML = multimediaArticleOne;
-  document.querySelector('.article2').innerHTML = multimediaArticleTwo;
-  document.querySelector('.article3').innerHTML = "";
-  document.querySelector('.article4').innerHTML = "";
+  document.querySelector('.article_1').innerHTML = multimediaArticleOne;
+  document.querySelector('.article_2').innerHTML = multimediaArticleTwo;
+  document.querySelector('.article_3').innerHTML = "";
+  document.querySelector('.article_4').innerHTML = "";
 };
-
-$(".multimediabutton").on("click", function(){
-  $(this).css("grid-template-areas", multimediaGrid)
-});
 
 const printArticles = () => {
-  document.querySelector('.article1').innerHTML = printArticleOne;
-  document.querySelector('.article2').innerHTML = printArticleTwo;
+  document.querySelector('.article_1').innerHTML = printArticleOne;
+  document.querySelector('.article_2').innerHTML = printArticleTwo;
+  document.querySelector('.article_3').innerHTML = printArticleThree;
+  document.querySelector('.article_4').innerHTML = printArticleFour;
 };
 
+// FUNCTIONS
+
+resumeShown = "false"
+topShown = "false"
+
+const checkResume = () => {
+    if (resumeShown == "false" && topShown == "false") {
+      document.querySelector('.viewer').innerHTML = resumeContent;
+      document.querySelector('.showResume').innerHTML= "Hide Resume";
+      resumeShown = "true";
+      topShown = "false";
+      return resumeShown;
+      return topShown;
+    }
+    else if (resumeShown == "false" && topShown == "true") {
+      document.querySelector('.viewer').innerHTML = resumeHidden;
+      document.querySelector('.viewer').innerHTML = resumeContent;
+      document.querySelector('.showResume').innerHTML= "Hide Resume";
+      resumeShown = "true";
+      topShown = "false";
+      return resumeShown;
+      return topShown;
+    }
+    else if (resumeShown == "true" && topShown == "false") {
+      document.querySelector('.viewer').innerHTML = resumeHidden;
+      document.querySelector('.showResume').innerHTML= "Show Resume";
+      resumeShown = "false";
+      topShown = "false"
+      return resumeShown;
+      return topShown;
+    }
+};
+
+const checkTop = () => {
+    if (topShown == "true") {
+      document.querySelector('.work').innerHTML = "";
+      document.querySelector('.showWork').innerHTML= "Show Work Experience";
+      workShown = "false";
+      return workShown;
+    }
+    else if (workShown == "false") {
+      document.querySelector('.work').innerHTML = workContent;
+      document.querySelector('.showWork').innerHTML= "Hide Work Experience";
+      workShown = "true";
+      return workShown;
+    }
+};
+
+document.querySelector('.showResume').onclick = checkResume;
+document.querySelector('.topArticles').onclick = checkTop;
+
 document.addEventListener('keydown', checkKey);
-document.querySelector('.multimediabutton').onclick = multimediaArticles;
-document.querySelector('.printbutton').onclick = printArticles;
