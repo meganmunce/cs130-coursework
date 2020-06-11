@@ -264,8 +264,7 @@ li {
 .character {
   height: 100px;
   width: 100px;
-  position: sticky;
-  top: 600px;
+  position: relative;
 }
 
 .jumping {
@@ -273,10 +272,10 @@ li {
 }
 
 @keyframes jump {
-  0%{top: 500px;}
-  30%{top: 400px;}
-  70%{top: 400px;}
-  100%{top: 500px;}
+  0%{top: 0px;}
+  30%{top: 0px;}
+  70%{top: 0px;}
+  100%{top: 0px;}
 }
 
 .nav a:hover {
