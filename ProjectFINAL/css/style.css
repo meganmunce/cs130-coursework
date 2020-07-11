@@ -147,7 +147,6 @@ h1 {
   color: #432556;
   padding: 0px;
   margin: 0px;
-  text-indent: 10px;
 }
 
 h2 {
@@ -158,12 +157,11 @@ h2 {
 }
 
 h3 {
-  font-size: 18px;
-  font-family: 'Raleway', sans-serif;
-  text-align: left;
-  color: black
-  padding: 0px;
-  margin: 0px;
+  font-family: 'Fredoka One', cursive;
+  font-size: 20px;
+  margin: 10px;
+  color: #432556;
+  text-align: center;
 }
 
 
@@ -176,7 +174,6 @@ h4 {
 }
 
 p {
-  text-indent: 5px;
   font-size: 15px;
   font-family: 'Raleway', sans-serif;
   padding: 0px;
@@ -184,7 +181,6 @@ p {
 }
 
 a {
-  text-indent: 5px;
   font-size: 15px;
   font-family: 'Raleway', sans-serif;
   padding: 0px;
@@ -249,6 +245,11 @@ li {
   width: 100%;
   height: auto;
   text-align: center;
+}
+
+.designimg {
+  width: 100%;
+  height: auto;
 }
 
 .icon {

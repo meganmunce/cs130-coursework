@@ -22,7 +22,6 @@ multimediaContent = `
 `
 
 resumeContent = `
-
 <section class="d shown">
 <h2>Journalism Experience</h2>
 <h3>The Daily Northwestern</h3>
@@ -201,11 +200,45 @@ topArticles = `
 </section>
 `
 
+designContent = `
+<section class="d shown">
+<img src="images/mockattherock.png" class="designimg">
+<h3>Mock at the Rock Logo Design</h3>
+<p>I designed this logo for Mock at the Rock, Northwestern Mock Trial's fall quarter 2020 online mock trial invitational.</p>
+<br>
+<p><b>Design:</b> The rock both in the name and the center of the design refers to the famous Rock on Northwestern's campus, however I added space-themed elements to the design to give it the double meaning of a space rock.
+I also sought out a Flintstones-adjacent font for the name to invoke another commonly thought of rock: the Stone Age. The final element of the design is a judge's gavel, tying the logo back to mock trial. </p>
+<br>
+<p><b>Colors:</b> I used Northwestern's official shade of purple to color the rock, and the bright colors of the rings and small planets
+are inspired by the Disney Channel movie Zenon: Girl of the 21st Century, which remains one of my favorite space-related movies.</p>
+<br>
+<p><b>Software used:</b> Adobe Photoshop, Procreate for the iPad</p>
+</section>
+<section class="e shown">
+<video width="320" height="240" controls>
+  <source src="images/memberspotlight.mp4" type="video/mp4">
+Your browser does not support this video.
+</video>
+<h3>Northwestern Mock Trial Member Spotlights</h3>
+<p><b>Software used:</b> Adobe After Effects, Procreate for iPad</p>
+</section>
+<section class="f shown">
+<img src="images/bbqfbcover.png" class="designimg">
+<img src="images/bbqfbframe.jpg" class="designimg">
+<h3>Barbeque Fundraiser</h3>
+<p>I designed this social media package for members of Northwestern Mock Trial to promote our spring quarter 2019 barbeque fundraiser.</p>
+</section>
+</section>
+<section class="g shown">
+</section>`
+
+
 // BUTTON FUNCTIONS
 
 resumeShown = "false"
 topShown = "false"
 multimediaShown = "false"
+designShown = "false"
 
 const checkResume = () => {
     if (resumeShown == "false" && topShown == "false" && multimediaShown == "false") {
@@ -329,14 +362,63 @@ const checkMultimedia = () => {
     }
 };
 
+const checkDesign = () => {
+  //nothing on the screen
+  if (multimediaShown == "false" && topShown == "false" && resumeShown == "false" && designShown == "false") {
+    document.querySelector('.viewer').innerHTML = designContent;
+    resumeShown = "false";
+    topShown = "false";
+    multimediaShown = "false";
+    designShown = "true";
+    return resumeShown;
+    return topShown;
+    return multimediaShown;
+    return designShown;
+  }
+  else if (resumeShown == "false" && topShown == "true" && multimediaShown == "false") {
+    document.querySelector('.viewer').innerHTML = resumeHidden;
+    document.querySelector('.viewer').innerHTML = multimediaContent;
+    resumeShown = "false";
+    topShown = "false";
+    multimediaShown = "true";
+    return resumeShown;
+    return topShown;
+    return multimediaShown;
+    return designShown;
+  }
+  else if (resumeShown == "true" && topShown == "false" && multimediaShown == "false") {
+    document.querySelector('.viewer').innerHTML = resumeHidden;
+    document.querySelector('.viewer').innerHTML = multimediaContent;
+    resumeShown = "false";
+    topShown = "false";
+    multimediaShown = "true";
+    return resumeShown;
+    return topShown;
+    return multimediaShown;
+    return designShown;
+  }
+  else if (resumeShown == "true" && topShown == "false" && multimediaShown == "true") {
+    document.querySelector('.viewer').innerHTML = resumeHidden;
+    resumeShown = "false";
+    topShown = "false"
+    multimediaShown = "false";
+    return resumeShown;
+    return topShown;
+    return multimediaShown;
+    return designShown;
+  }
+};
+
 const clearTheScreen = () => {
   document.querySelector('.viewer').innerHTML = resumeHidden;
   resumeShown = "false";
   topShown = "false"
   multimediaShown = "false";
+  designShown = "false";
   return resumeShown;
   return topShown;
   return multimediaShown;
+  return designShown;
 };
 
 // VARIABLES
@@ -345,37 +427,38 @@ const character = document.querySelector('.character');
 var printbox = document.querySelector('.printbox');
 var resumebox = document.querySelector('.resumebox');
 var multimediabox = document.querySelector('.multimediabox');
-const distance = 25; // change to whatever you want:
+var designbox = document.querySelector('.designbox');
+const distance = 25;
 
 // MOVING THE CHARACTER -- thank you Sarah!
 
 const moveUp = (ev) => {
     if (character.src.indexOf("Left") > 0) {
-        character.src = "Left_Up.png";
+        character.src = "images/Left_Up.png";
     } else {
-        character.src = "Right_Up.png";
+        character.src = "images/Right_Up.png";
     }
     character.style.top = (character.offsetTop - distance) + "px";
 };
 
 const moveDown = (ev) => {
     if (character.src.indexOf("Left") > 0) {
-        character.src = "Left.png";
+        character.src = "images/Left.png";
     } else {
-        character.src = "Right.png";
+        character.src = "images/Right.png";
     }
     character.style.top = (character.offsetTop + distance) + "px";
 };
 
 const moveLeft = (ev) => {
-    character.src = "Left.png";
+    character.src = "images/Left.png";
     console.log(character.offsetLeft);
     console.log(character.offsetLeft - distance);
     character.style.left = (character.offsetLeft - distance) + "px";
 };
 
 const moveRight = (ev) => {
-    character.src = "Right.png";
+    character.src = "images/Right.png";
     character.style.left = (character.offsetLeft + distance) + "px";
 };
 
@@ -383,8 +466,6 @@ function removeJump ()  {
   character.classList.remove("jumping");
   console.log("removed jump");
 };
-
-
 
 const checkKey = (e) => {
     var k = e.keyCode;
@@ -412,5 +493,6 @@ const checkKey = (e) => {
 document.addEventListener('keydown', checkKey);
 document.querySelector('.showResume').onclick = checkResume;
 document.querySelector('.topArticles').onclick = checkTop;
+document.querySelector('.graphicDesign').onclick = checkDesign;
 document.querySelector('.multimediaArticles').onclick = checkMultimedia;
 document.querySelector('.clearScreen').onclick = clearTheScreen;
