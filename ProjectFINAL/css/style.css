@@ -159,18 +159,16 @@ h2 {
 h3 {
   font-family: 'Fredoka One', cursive;
   font-size: 20px;
-  margin: 10px;
   color: #432556;
-  text-align: center;
+  text-align: left;
 }
 
 
 h4 {
-  font-size: 18px;
-  font-family: 'Raleway', sans-serif;
-  color: black;
-  padding: 5px;
-  margin: 0px;
+  font-family: 'Fredoka One', cursive;
+  font-size: 20px;
+  color: #432556;
+  text-align: center;
 }
 
 p {
@@ -188,6 +186,8 @@ a {
   text-decoration: none;
   color: black;
 }
+
+
 
 li {
   font-size: 15px;
@@ -279,7 +279,7 @@ li {
   100%{top: 0px;}
 }
 
-.nav a:hover {
+a:hover {
   animation: blackToMediumPurple 750ms;
   color: #AA7BC3;
 }

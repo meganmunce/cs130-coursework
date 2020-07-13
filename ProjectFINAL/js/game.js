@@ -23,16 +23,17 @@ multimediaContent = `
 
 resumeContent = `
 <section class="d shown">
-<h2>Journalism Experience</h2>
+<h2>Journalism-Related Experience</h2>
 <h3>The Daily Northwestern</h3>
-<p>Assistant Campus Editor</p>
-<p>September 2018 - current</p>
+<p>Development Editor</p>
+<p>July 2020 - current</p>
 <p>Evanston, IL/Remote</p>
   <ul>
-    <li>Assist the campus editor in editing all campus desk articles for style and clarity</li>
+    <li>Edit all articles by new writers, including all Letters to the Editor submitted by community members</li>
+    <li>Lead informational sessions about AP style, ethics, and journalistic writing style</li>
+    <li>Design programming to welcome new writers, including meet-and-greets with senior staffers and journalism-related workshops, such as how to begin freelancing</li>
     <li>Pitch and budget weekly stories</li>
-    <li>Cover student activists at Northwestern</li>
-    <li>Previously: Social Media Editor, Copy Chief</li>
+    <li>Previously: Reporter (since September 2018), Assistant Campus Editor (Spring 2020), Social Media Editor (Winter 2020), Copy Chief (Fall 2019)</li>
   </ul>
   <h3>Parity.org</h3>
   <p>Content Volunteer</p>
@@ -51,9 +52,43 @@ resumeContent = `
         <li>Research current events and news about developments in international conflict</li>
         <li>Write weekly articles briefing about the development, its past context, and </li>
       </ul>
+      <h3>Victory Briefs Company</h3>
+      <p>Contributing Writer</p>
+      <p>November 2018 - June 2019</p>
+      <p>Remote</p>
+        <ul>
+        <li>Researched topics of domestic and international policy from price controls on the pharmaceutical industry to India's membership in the United Nations Security Council</li>
+        <li>Wrote 2000 word briefs to educate high school debate students about necessary background information, pros and cons of each policy</li>
+        </ul>
+        <h3>National Speech and Debate Association</h3>
+        <p>Publications Intern</p>
+        <p>July 2017 - June 2018</p>
+        <p>Remote</p>
+          <ul>
+          <li>Selected from a pool of national high school students</li>
+          <li>Attended quarterly meetings to discuss performance and distribute articles</li>
+          <li>Researched and interviewed coaches and former participants in high speech and debate to write profiles to appear in seasonal copies of the NSDA's magazine, the Rostrum</li>
+          </ul>
 </section>
 <section class="e shown">
 <h2>Other Work Experience</h2>
+<h3>Beyond Resolved</h3>
+<p>Advisory Board Member</p>
+<p>June 2020 - present</p>
+<p>Remote</p>
+<ul>
+    <li>Provide guidance, as a former high school speech and debate participant, to the leadership of Beyond Resolved: a nonprofit run by current high school speech and debate participants to empower gender minorities through an open blog and educational programming</li>
+    <li>Attend biweekly meetings with leadership of Beyond Resolved to offer advice and answer questions</li>
+    <li>Previously: Beyond Resolved Institute lecturer and lab leader, providing volunteer educational lectures and coaching to speech and debate participants on student-run programs who lack financial access to paid coaching and camps (Summer 2019)</li>
+</ul>
+<h3>Freelance Debate Coach</h3>
+<p>August 2018 - December 2019</p>
+<p>Remote</p>
+<ul>
+<li>Serve as a coach and chaperone for several different high schools across the country, including the Dalton School in New York and the Quarry Lane School in California</li>
+<li>Assist in researching and writing arguments prior to the tournament, including providing feedback to student-written arguments</li>
+<li>Watch students debate during tournaments and provide feedback to improve future performance</li>
+</ul>
 <h3>Summit Debate</h3>
 <p>Junior Staffer</p>
 <p>July 2019</p>
@@ -62,14 +97,6 @@ resumeContent = `
     <li>Spent two week at Emerson College in Boston, MA, working at a top tier debate camp for middle and high school students; Led a lab of 18 high school students teaching argumentation skills and topic knowledge about China's Belt and Road Initiative</li>
     <li>Led lectures in the Afghanistan peace process, argument structure, and audience adaptation</li>
   </ul>
-  <h3>Victory Briefs Company</h3>
-  <p>Contributing Writer</p>
-  <p>November 2018 - June 2019</p>
-  <p>Remote</p>
-    <ul>
-    <li>Researched topics of domestic and international policy from price controls on the pharmaceutical industry to India's membership in the United Nations Security Council</li>
-    <li>Wrote 2000 word briefs to educate high school debate students about necessary background information, pros and cons of each policy</li>
-    </ul>
   <h3>Victory Briefs Institute</h3>
   <p>Public Forum Junior Staffer</p>
   <p>June 2018 - July 2018</p>
@@ -94,6 +121,7 @@ resumeContent = `
     <li>Jazz Band co-founder</li>
     <li>Big Sister</li>
     <li>Junior Varsity Track & Field</li>
+    <li>Graduated ranked 7th in the nation for Public Forum debate by the Victory Briefs Institute</li>
   </ul>
   <h3> Northwestern University </h3>
   <p>Evanston, IL</p>
@@ -118,8 +146,8 @@ resumeContent = `
 </ul>
 <p>Computer Science</p>
 <ul>
-<li>Novice HTML, CSS, Javascript</li>
-<li>Novice Python</li>
+<li>HTML, CSS, Javascript</li>
+<li>Python</li>
 </ul>
 <p>Creativity & Productivity Tools</p>
 <ul>
@@ -203,7 +231,7 @@ topArticles = `
 designContent = `
 <section class="d shown">
 <img src="images/mockattherock.png" class="designimg">
-<h3>Mock at the Rock Logo Design</h3>
+<h4>Mock at the Rock Logo Design</h4>
 <p>I designed this logo for Mock at the Rock, Northwestern Mock Trial's fall quarter 2020 online mock trial invitational.</p>
 <br>
 <p><b>Design:</b> The rock both in the name and the center of the design refers to the famous Rock on Northwestern's campus, however I added space-themed elements to the design to give it the double meaning of a space rock.
@@ -219,17 +247,41 @@ are inspired by the Disney Channel movie Zenon: Girl of the 21st Century, which 
   <source src="images/memberspotlight.mp4" type="video/mp4">
 Your browser does not support this video.
 </video>
-<h3>Northwestern Mock Trial Member Spotlights</h3>
-<p><b>Software used:</b> Adobe After Effects, Procreate for iPad</p>
+<h4>Northwestern Mock Trial Member Spotlights</h4>
+<p>This is one example of the member spotlights I created and posted on Northwestern Mock Trial's Instagram during spring of 2020 featuring different members of our team.<p>
+<br>
+<p><b>Background:</b> I chose four of the Northwestern campus's most iconic locations — in this example, the Lakefill — and recreated them in Procreate for iPad to serve as the background for these spotlights.</p>
+<br>
+<p><b>Animations:</b> To animate the various moving parts of each spotlight, I taught myself Adobe After Effects. Each different location features a different animation — here in the Lakefill example, a biplane flies by with a banner reading the member's name, while spotlights at the Rock showed their name being painted on, spotlights at Norris University Center showed a flier blowing by with their name, and spotlights at the Weber Arch had a leaf float down with the member's name. </p>
+<br>
+<a href="https://www.instagram.com/northwesternmocktrial/"" target="_blank"> To see the full set of member spotlights, click here to visit Northwestern Mock Trial's Instagram.</a>
+<br>
+<br>
+<p><b>Software used:</b> Adobe After Effects, Adobe Photoshop, Procreate for iPad</p>
 </section>
 <section class="f shown">
-<img src="images/bbqfbcover.png" class="designimg">
-<img src="images/bbqfbframe.jpg" class="designimg">
-<h3>Barbeque Fundraiser</h3>
-<p>I designed this social media package for members of Northwestern Mock Trial to promote our spring quarter 2019 barbeque fundraiser.</p>
+<img src="images/fbcover.png" class="designimg">
+<img src="images/igstory.png" class="designimg">
+<h4>Bake Sale Fundraiser</h4>
+<p>I designed this social media package as Northwestern Mock Trial's fundraising chair to promote our fall quarter 2019 holiday bake fundraiser. This Facebook cover photo (top) and Instagram story (bottom) were posted by members on social media the week before the bake sale to publicize the location and details. The sale made over $300 in net profits, which helped our team purchase plane tickets and reimburse meal costs at tournaments to prevent mock trial from becoming a financially-inaccessible activity.</p>
+<br>
+<p><b>Software used:</b> Piktochart</p>
 </section>
 </section>
 <section class="g shown">
+<img src="images/logo.png" class="designimg">
+<h4>Northwestern Mock Trial Logo</h4>
+<p>This is Northwestern Mock Trial's official logo which I designed in fall of 2019 to be used on our team apparel and our social media accounts. The logo combines elements of two logos central to our organization:<p>
+<br>
+<a href="https://www.sportslogos.net/logos/view/y8pgn5ar98zl4gilfjsw/Northwestern_Wildcats/1981/Alternate_Logo" target="_blank">1. The Wildcat logo for Northwestern sports</a>
+<br>
+<br>
+<a href="https://www.collegemocktrial.org/" target="_blank">2. The official logo of the American Mock Trial Association, which governs collegiate mock trial</a>
+<br>
+<br>
+<p>The logo borrows the wildcat from the Northwestern logo and combines it with the scales of justice from the AMTA's official logo, as well as the date established Northwestern Mock Trial as an inaugural member of the American Mock Trial Association. The combination of these elements communicates the purpose of the team: a Northwestern student organnization that has been commpeting in mock trial since its inception in 1985.</p>
+<br>
+<p><b>Software used:</b> Photoshop, Procreate for iPad</p>
 </section>`
 
 
